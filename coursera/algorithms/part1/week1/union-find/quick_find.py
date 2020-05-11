@@ -1,4 +1,4 @@
-class quick_find:
+class QuickFind:
     id = []
 
     def __init__(self, N):
@@ -20,9 +20,10 @@ class quick_find:
                 id[i] = qid
 
 
-qf = quick_find(10)
+qf = QuickFind(10)
 print(qf.id)
 qf.union(1, 2)
 qf.union(1, 3)
-print(qf.connected(2, 3))
-print(qf.connected(0, 3))
+
+assert qf.connected(2, 3) == True
+assert qf.connected(0, 3) == False

@@ -1,4 +1,4 @@
-class quick_union:
+class QuickUnion:
     id = []
 
     def __init__(self, N):
@@ -21,9 +21,9 @@ class quick_union:
         self.id[i] = j
 
 
-qf = quick_union(10)
-print(qf.id)
-qf.union(1, 2)
-qf.union(1, 3)
-print(qf.connected(2, 3))
-print(qf.connected(0, 3))
+qu = QuickUnion(10)
+print(qu.id)
+qu.union(1, 2)
+qu.union(1, 3)
+assert qu.connected(2, 3) == True
+assert qu.connected(0, 3) == False
