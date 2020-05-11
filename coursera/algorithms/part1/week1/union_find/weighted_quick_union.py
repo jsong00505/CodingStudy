@@ -30,15 +30,3 @@ class WeightedQuickUnion:
             j = temp
         self.id[i] = j
         self.sz[j] += self.sz[i]
-
-
-wqu = WeightedQuickUnion(10)
-print(wqu.id)
-wqu.union(1, 2)
-wqu.union(1, 3)
-wqu.union(4, 6)
-wqu.union(4, 7)
-wqu.union(0, 2)
-
-assert wqu.connected(2, 3) == True
-assert wqu.connected(1, 7) == False

@@ -49,12 +49,3 @@ class SuccessorWithDelete:
 
     def successor(self, x):
         return self.high[self.root(x)] + 1
-
-
-swe = SuccessorWithDelete(10)
-assert swe.successor(1) == 2  # expected 2
-swe.remove(1)
-assert swe.successor(1) == 2  # expected 2
-swe.remove(3)
-assert swe.successor(2) == 4  # expected 3
-assert swe.successor(9) == 10  # expected 10

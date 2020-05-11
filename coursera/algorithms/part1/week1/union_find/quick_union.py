@@ -19,11 +19,3 @@ class QuickUnion:
         i = self.root(p)
         j = self.root(q)
         self.id[i] = j
-
-
-qu = QuickUnion(10)
-print(qu.id)
-qu.union(1, 2)
-qu.union(1, 3)
-assert qu.connected(2, 3) == True
-assert qu.connected(0, 3) == False

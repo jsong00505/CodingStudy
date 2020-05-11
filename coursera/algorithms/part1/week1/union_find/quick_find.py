@@ -18,12 +18,3 @@ class QuickFind:
         for i, v in enumerate(id):
             if i == pid:
                 id[i] = qid
-
-
-qf = QuickFind(10)
-print(qf.id)
-qf.union(1, 2)
-qf.union(1, 3)
-
-assert qf.connected(2, 3) == True
-assert qf.connected(0, 3) == False

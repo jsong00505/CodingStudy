@@ -39,14 +39,3 @@ class SocialNetworkConnectivity:
         # track the earliest time at which all members are connected(assum time is sorted)
         if self.sz[j] <= len(self.sz):
             self.time = time
-
-
-connectivity = SocialNetworkConnectivity(5)
-
-connectivity.union(1, 2, 1)
-connectivity.union(1, 3, 2)
-connectivity.union(0, 2, 5)
-connectivity.union(2, 3, 9)
-connectivity.union(0, 4, 11)
-
-assert connectivity.time == 11

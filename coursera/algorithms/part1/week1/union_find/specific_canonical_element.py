@@ -45,15 +45,3 @@ class SpecificCanonicalElement:
 
     def find(self, i):
         return self.high[self.root(i)]
-
-
-sce = SpecificCanonicalElement(10)
-print(sce.id)
-sce.union(1, 2)
-sce.union(1, 3)
-sce.union(4, 6)
-sce.union(4, 7)
-sce.union(0, 2)
-print(sce.high)
-assert sce.find(1) == 3  # expected 3
-assert sce.find(4) == 7  # expected 7
