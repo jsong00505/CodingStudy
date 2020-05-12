@@ -1,10 +1,9 @@
 class SocialNetworkConnectivity:
-    id = []
-    sz = []
-    time = 0;
-
     def __init__(self, N):
         self.N = N
+        self.id = []
+        self.sz = []
+
         for i in range(N):
             self.id.append(i)
             self.sz.append(1)

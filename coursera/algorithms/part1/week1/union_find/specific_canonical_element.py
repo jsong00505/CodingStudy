@@ -1,10 +1,9 @@
 class SpecificCanonicalElement:
-    id = []
-    sz = []
-    high = []
-
     def __init__(self, N):
         self.N = N
+        self.id = []
+        self.sz = []
+        self.high = []
         for i in range(N):
             self.id.append(i)
             self.sz.append(1)

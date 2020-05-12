@@ -1,8 +1,8 @@
 class QuickUnion:
-    id = []
 
     def __init__(self, N):
         self.N = N
+        self.id = []
         for i in range(N):
             self.id.append(i)
 
