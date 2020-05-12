@@ -20,7 +20,7 @@ class Percolation:
         if self.is_out_range(row, col):
             raise ValueError
         self.sites[row][col] = True
-        print("open [%d][%d]" % (row, col))
+        #print("open [%d][%d]" % (row, col))
         self.number_of_open_sites += 1
 
         # up
@@ -42,6 +42,7 @@ class Percolation:
     # is the site (row, col) open?
     def is_open(self, row, col):
         if self.is_out_range(row, col):
+            print("%d %d" %(row, col))
             raise ValueError
         return self.sites[row][col]
 
@@ -55,7 +56,7 @@ class Percolation:
         return False
 
     # returns the number of open sites
-    def number_of_open_sites(self):
+    def get_number_of_open_sites(self):
         return self.number_of_open_sites;
 
     # does the system percolate?
@@ -66,6 +67,7 @@ class Percolation:
         for i in range(top, self.n):
             for j in range(bottom, bottom + self.n):
                 if self.wqu.connected(i, j):
+                    #print(self.sites)
                     return True
         return False
 
