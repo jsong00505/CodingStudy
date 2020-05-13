@@ -1,6 +1,6 @@
 import unittest
 
-from coursera.algorithms.part1.week2.stack.stack_of_strings import StackOfStrings
+from coursera.algorithms.part1.week2.stacks_and_queues.stack_of_strings import StackOfStrings
 
 
 class MyTestCase(unittest.TestCase):

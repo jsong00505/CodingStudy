@@ -13,4 +13,4 @@ class FixedCapacityStackOfStrings:
 
     def pop(self):
         self.n -= 1
-        return self.s[self.n + 1]
+        return self.s[self.n]
