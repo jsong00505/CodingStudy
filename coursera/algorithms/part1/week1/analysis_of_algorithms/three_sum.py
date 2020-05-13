@@ -18,7 +18,7 @@ class ThreeSum:
         bs = BinarySearch()
 
         # complexity: n * lg n
-        sorted(a)
+        a = sorted(a)
 
         for i in range(n - 1):
             for j in range(i + 1, n):
