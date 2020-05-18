@@ -1,4 +1,4 @@
-class BottomUpMergeSort:
+class BottomUpMergesort:
     def sort(self, a):
         size = 1
         res = []

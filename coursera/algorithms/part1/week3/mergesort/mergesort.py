@@ -1,7 +1,7 @@
 from typing import List
 
 
-class MergeSort:
+class Mergesort:
     def sort(self, a: List[int]) -> List[int]:
         if not a:
             return []
