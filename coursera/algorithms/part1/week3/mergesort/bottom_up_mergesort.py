@@ -4,9 +4,11 @@ class BottomUpMergesort:
         res = []
         while size < len(a):
             lo = 0
-            while lo <= len(a) - size:
-                left = a[lo: lo + size]
-                right = a[lo + size: lo + 2 * size]
+            while lo <= len(a):
+                mid = min(lo + size, len(a))
+                hi = min(lo + 2 * size, len(a))
+                left = a[lo:mid]
+                right = a[mid:hi]
                 if not left:
                     res.extend(right)
                 elif not right:
